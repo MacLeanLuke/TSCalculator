@@ -1,0 +1,28 @@
+{
+  "name": "tscalculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^9.1.1",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.3",
+    "@types/readline-sync": "^1.4.4",
+    "readline-sync": "^1.4.10",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "compile": "npx tsc index.ts",
+    "dev": "node index.js",
+    "test": "mocha -w --require ts-node/register --watch-extensions ts 'test/**/*.ts'"
+  },
+  "keywords": [],
+  "author": "MacLeanLuke",
+  "license": "ISC",
+  "description": "A calculator application demonstrating test driven development in Typescript"
+}
