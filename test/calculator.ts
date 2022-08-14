@@ -2,6 +2,11 @@ import { describe } from 'mocha';
 import {expect} from 'chai'
 import {Calculator} from '../src/calculator';
 
+/**
+ * This is a test document for the operations and values of the Calculator Object Class
+ * - The test suite used is Mocha Chai
+ * - The tests are run from the terminal by the command "npm run test"
+ */
 
 describe('calculator',()=>{
 

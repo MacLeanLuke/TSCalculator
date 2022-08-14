@@ -2,9 +2,8 @@
  * InputParser is a class object that is used by the main application to parse the user input
  * - "inputArray": holds an array of strings from the inputString
  * - "operatorArray": holds an array of strings from the inputArray that are tested against the 4 operators
- * - "numberArray": holds an array of strings from the inputArray that are tested against the 4 operators
- * - "all": Prefetches all internal links on the page.
- * - "no": No auto prefetch.
+ * - "numberArray": holds an array of strings from the inputArray that are tested with parseFloat against isNaN
+ * - "otherArray": is a catch all array of strings from the inputArray
  */
 
 export class InputParser {
@@ -37,12 +36,8 @@ export class InputParser {
             {
                 this.otherArray.push(this.inputArray[i])
             }
-
         }
-
     }
-
-
 
     isNumber(str: string): boolean
     {

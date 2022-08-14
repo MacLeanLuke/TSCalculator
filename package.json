@@ -19,7 +19,7 @@
   },
   "scripts": {
     "compile": "npx tsc index.ts",
-    "dev": "node index.js",
+    "start": "node index.js",
     "test": "mocha -w --require ts-node/register --watch-extensions ts 'test/**/*.ts'"
   },
   "keywords": [],
