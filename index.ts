@@ -85,10 +85,10 @@ export function main(): void
                 case "exit":
                 case "quit":
                     console.log("\n -----------Exiting CLI----------- \n");
-                    console.log("\nThank you for using the CLI RPN Calculator. Exiting now.");
+                    console.log("Thank you for using the CLI RPN Calculator. Exiting now.");
                     console.log("\n --------------------------------- \n");
                     processCommandLoop = false;
-                    break;
+                    return;
             }
         }
         console.log("\n -----------Returned Value--------- \n");

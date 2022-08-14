@@ -1,3 +1,11 @@
+/**
+ * InputParser is a class object that is used by the main application to parse the user input
+ * - "inputArray": holds an array of strings from the inputString
+ * - "operatorArray": holds an array of strings from the inputArray that are tested against the 4 operators
+ * - "numberArray": holds an array of strings from the inputArray that are tested against the 4 operators
+ * - "all": Prefetches all internal links on the page.
+ * - "no": No auto prefetch.
+ */
 
 export class InputParser {
     inputArray: string[];
@@ -14,10 +22,9 @@ export class InputParser {
 
     recieveInput(inputString: string ): void {
         this.inputArray = inputString.split(" ")
-        
+
         for(let i = 0; i < this.inputArray.length; i++)
         {
-            // console.log(this.inputArray[i])
             if(this.isNumber(this.inputArray[i]))
             {
                 this.numberArray.push(this.inputArray[i])
@@ -34,6 +41,8 @@ export class InputParser {
         }
 
     }
+
+
 
     isNumber(str: string): boolean
     {
