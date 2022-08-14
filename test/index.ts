@@ -1,10 +1,18 @@
-import {main} from '../index';
+// import {Main} from '../index';
 import {expect} from 'chai'
 
-describe('main',()=>{
+// describe('main',()=>{
 
-    it('should initialise with a calculated value of 0', ()=>{
-        expect(main).to.equal(0)
-    })
+//     it('should initialise with a value of a blank string', ()=>{
+//         let main = new Main()
+//         expect(main.inputValue).to.be.equal("")
+//     })
 
-})
+//     it('should return a value of "something" when "something" is typed into the prompt', ()=>{
+//         let main = new Main()
+//         expect(main.recieveInput()).to.be.equal("something")
+//     })
+
+    
+
+// })

@@ -14,7 +14,7 @@ Brief description about how to run the code.
 
     npm run compile
 
-    npm run compile
+    npm run dev
 
 ## Unordered List H3
 
