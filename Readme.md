@@ -77,3 +77,9 @@ If the user needs to quit the application, they may enter q, x, exit, quit, or ^
     Thank you for using the CLI RPN Calculator. Exiting now.
 
     --------------------------------- 
+
+# Final Considerations
+
+## Reasoning Behind Technical/Architectural Choices
+
+I choose an object oriented approach to abstracting out the various functions of the application to keep each of the functions well defined.
