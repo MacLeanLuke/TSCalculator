@@ -108,4 +108,8 @@ If the user needs to quit the application, they may enter q, x, exit, quit, or ^
 
 ## Reasoning Behind Technical/Architectural Choices
 
-I choose an object oriented approach to abstracting out the various functions of the application to keep each of the functions well defined and contained for testing. 
+I choose an object oriented approach to abstracting out the various functions of the application to keep each of the functions well defined and contained for testing. Also in an effort to make the user experience more intuitive, I added additional information in the output to give the user more context.
+
+## Additional Future Features
+
+With additional time, I would like to build out a more robust Object Oriented structure, and a robust testing suite to go along with it. Additionaly, I would like to add support for more operators, and build it out into a complete reactive web app.
