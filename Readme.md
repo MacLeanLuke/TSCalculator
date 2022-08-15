@@ -52,6 +52,32 @@ As operands are input, they are added sequentially to an array of operands, as o
     Enter numbers and operators + - * / separated by spaces:
     1 2 3.2 + * / 
 
+As additional operators and operands are added, they are added to their respective stack and calculated in order.
+
+    Enter numbers and operators + - * / separated by spaces:
+    1 
+     -----------Returned Value--------- 
+
+    The value returned by those values and operands is 1
+
+    --------------------------------- 
+
+    Enter numbers and operators + - * / separated by spaces:
+    2 
+     -----------Returned Value--------- 
+
+    The value returned by those values and operands is 1
+
+    --------------------------------- 
+
+    Enter numbers and operators + - * / separated by spaces:
+    + 
+     -----------Returned Value--------- 
+
+    The value returned by those values and operands is 3
+
+    --------------------------------- 
+
 Once the user presses, enter, those operators and operands are calculated. 
 
      -----------Returned Value--------- 
@@ -82,4 +108,4 @@ If the user needs to quit the application, they may enter q, x, exit, quit, or ^
 
 ## Reasoning Behind Technical/Architectural Choices
 
-I choose an object oriented approach to abstracting out the various functions of the application to keep each of the functions well defined.
+I choose an object oriented approach to abstracting out the various functions of the application to keep each of the functions well defined and contained for testing. 
