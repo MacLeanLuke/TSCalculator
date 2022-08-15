@@ -1,4 +1,11 @@
 "use strict";
+/**
+ * InputParser is a class object that is used by the main application to parse the user input
+ * - "inputArray": holds an array of strings from the inputString
+ * - "operatorArray": holds an array of strings from the inputArray that are tested against the 4 operators
+ * - "numberArray": holds an array of strings from the inputArray that are tested with parseFloat against isNaN
+ * - "otherArray": is a catch all array of strings from the inputArray
+ */
 exports.__esModule = true;
 exports.InputParser = void 0;
 var InputParser = /** @class */ (function () {
@@ -11,7 +18,6 @@ var InputParser = /** @class */ (function () {
     InputParser.prototype.recieveInput = function (inputString) {
         this.inputArray = inputString.split(" ");
         for (var i = 0; i < this.inputArray.length; i++) {
-            // console.log(this.inputArray[i])
             if (this.isNumber(this.inputArray[i])) {
                 this.numberArray.push(this.inputArray[i]);
             }

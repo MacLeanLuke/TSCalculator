@@ -1,33 +1,79 @@
 # Luke's CLI RPN Calculator
 
-## Introductory paragraph
+## Introduction to RPN
 
-Here's a introductory paragraph
+Reverse Polish Notation was proposed by Burks, Warren and Wright in 1954 as a way to make use of the computer's stack to store operands before executing the operator and reduce the number of characters stored in memory. As the operands are pushed into the stack, each additional operand is stored in the position above. Once an operator is entered, it is applied in a FIFO (First In First Out). For example the entry, 5 3 - 2 * would be executed as follows: (( 5 - 3) * 2) which would return 4.
 
-# H2
 
-## How to run the code
+# Getting This Project Running Locally
 
-Brief description about how to run the code.
+## Clone the project to your local environment
 
-    npm run test
+There are multiple ways to clone in the project. If you have the Github CLI set up, you may use the following:
 
-    npm run compile
+    gh repo clone MacLeanLuke/TSCalculator
 
-    npm run dev
+## Install the node packages
 
-## Unordered List H3
+In additional to the Typescript, this package requires the Mocha/Chai testing packages and readline-sync for terminal input.
 
-paragraph about unordered list. **bold text**
+    npm install
+    
+## Mocha/Chai Testing Suite
 
-- List Item
-- List Item
-- List Item
-- List Item
+The testing suite chosen for this project was the Mocha/Chai test suite. There are 20 tests that run on the calculator methods and properties.
 
-## Ordered List H3
+    npm test
+    
 
-1. List Item 1
-2. List Item 2
-3. List Item 3
-4. List Item 4
+## Compile and Run
+
+The Project can be compiled and run at this point.
+
+    npm start
+
+# How to Run the Calculator
+
+## Supported Operators
+
+1. "+" : Performs the addition function 
+2. "-" : Performs the subtraction function 
+3. "*" : Performs the multiplication function
+4. "/" : Performs the division function
+
+## Supported Operands
+
+This calculator only takes integers and floats as operands.
+
+## Examples
+
+As operands are input, they are added sequentially to an array of operands, as operators are input, they are added sequentially to an array of operators. 
+
+    Enter numbers and operators + - * / separated by spaces:
+    1 2 3.2 + * / 
+
+Once the user presses, enter, those operators and operands are calculated. 
+
+     -----------Returned Value--------- 
+
+    The value returned by those values and operands is 9.600000000000001
+
+    --------------------------------- 
+
+If the user needs help, they may press h, help or ?
+
+     -----------Help Console---------- 
+
+    Enter numbers and operators + - * / separated by spaces. 
+
+    If you would like to exit the program please enter q, x, exit, or quit
+
+    --------------------------------- 
+
+If the user needs to quit the application, they may enter q, x, exit, quit, or ^C
+
+    -----------Exiting CLI----------- 
+
+    Thank you for using the CLI RPN Calculator. Exiting now.
+
+    --------------------------------- 

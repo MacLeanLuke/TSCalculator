@@ -99,7 +99,7 @@ export function main(): void
         * If the an exit command is entered, the processCommandLoop variable is set to false and the application stops
         */
     
-        for(let j = 0; j < otherArray.length; j++){
+        for(let j = otherArray.length - 1; j >= 0; j--){
             switch(otherArray[j]){
                 case "h":
                 case "help":

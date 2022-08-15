@@ -8,6 +8,7 @@
 
 export class InputParser {
     inputArray: string[];
+    rpnArray: string[];
     operatorArray: string[];
     numberArray: string[];
     otherArray: string[];
