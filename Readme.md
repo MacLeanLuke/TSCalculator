@@ -26,9 +26,15 @@ The testing suite chosen for this project was the Mocha/Chai test suite. There a
     npm test
     
 
-## Compile and Run
+## Compile 
 
-The Project can be compiled and run at this point.
+The Project can be compiled.
+
+    npm compile
+    
+##  Run
+
+The Project can be run at this point.
 
     npm start
 
