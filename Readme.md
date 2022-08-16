@@ -30,7 +30,7 @@ The testing suite chosen for this project was the Mocha/Chai test suite. There a
 
 The Project can be compiled.
 
-    npm compile
+    npm run compile
     
 ##  Run
 
